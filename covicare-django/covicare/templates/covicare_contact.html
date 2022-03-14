@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+    {% block covicss %}
+    <!-- css content write here  -->
+    {% endblock %}
+
+    {% block body %}
+
+    {% load static %}
+    
+    <!-- navigation bar part -->
+    <div class="nav-bar">
+        <div class="nav-content">
+            <div  class="item item2" ><i class="fas fa-bars" id="sidebar_btn" onclick="togglemenu()"></i></div>
+            <div class="item item1"><a href="{% url 'covicare_home' %}" id="link-items">Home</a></div>
+            <div class="item item1"><a href="{% url 'covicare_chat' %}" id="link-items">Chats</a></div>
+            <div class="item item1"><a href="{% url 'covicare_about' %}" id="link-items">About</a></div>
+            <div class="item item2 ">Contacts</div>
+        </div>
+        <div class="search">
+            <div class="searchbox"><input type="text" placeholder="   Search Here.."></div>
+            <div class="sea-rch"><a href="#" class="search-link">
+                    <h3 id="sea-rch" class="font1" style="font-size:18px;padding:1vh 2vh;">Search</h3>
+                </a></div>
+            </div>
+        </div>
+        
+        <div class="contact-content">
+            <div id="sidebar" onclick= "togglemenu()">
+            <div class="profile"></div>
+            <h4 id="username" style="color:white">Username</h4>
+            <a href="#" class="menu-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+            <a href="#" class="menu-link"><i class="fas fa-share-square"></i><span>Share</span></a>
+            <a href="#" class="menu-link"><i class="fas fa-cogs"></i><span>Settings</span></a>
+            <a href="#" class="menu-link"><i class="fas fa-sign-out-alt"></i><span>Log-out</span></a>
+        </div>
+        <div class="contact-content-left">
+            <img src="{% static 'images/contact us.jpg' %}" alt="" width="385px" style="margin-left: 5vw;margin-top:5vw;">
+        </div>
+        <div class="contact-content-right">
+            <div class="contact-ti-tle">
+                <h1 class="font1" style="margin-bottom: -5vh;">We are here to help you !!!</h1>
+            </div><br><br>
+            <div class="contact-form">
+                <form action="" method="" onsubmit="contact_info()">
+                    <div class="contact-form-element">
+                        <h3 class="font2" style="color:#153D77;font-size:25px;">Enter Your Name </h3>
+                        <input type="text" class=" form-c form-name" id="contact_name">
+                    </div><br>
+                    <div class="contact-form-element">
+                        <h3 class="font2" style="color:#153D77;font-size:25px;">Enter E-mail ID </h3>
+                        <input type="email" class=" form-c form-email" id="contact_email">
+                    </div><br>
+                    <div class="contact-form-element">
+                        <h3 class="font2" style="color:#153D77;font-size:25px;">Enter Contact No. </h3>
+                        <input type="text" class=" form-c form-contact" id="contact_no">
+                    </div><br>
+                    <div class="contact-form-element">
+                        <h3 class="font2" style="color:#153D77;font-size:25px;">Enter Message Here </h3>
+                        <textarea class=" form-t form-msg" cols="10" rows="5" style="width:40vw"
+                            id="contact_msg"></textarea>
+                    </div><br>
+                    <div class="contact-form-element">
+                        <button class="form-submit" name="btn-submit" onclick="contact_info()">
+                            <h3 class="font2" id="submit">Submit<h3>
+                        </button>
+                    </div><br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+   

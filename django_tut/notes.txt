@@ -1,0 +1,5 @@
+manage.py --> command line utility which helps to interact with django projects.
+init.py --> it is a blank file ,it is a python package
+settings.py --> it consists of high level settings.
+urls.py --> consists of url declarations an mappings.
+wsgi.py --> Web Server Getway Interface....is a method to host django projects

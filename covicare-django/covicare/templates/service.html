@@ -1,0 +1,364 @@
+{% extends 'basic.html' %}
+{% block title %} Covi-care/Service{% endblock %}
+{% block css %}
+* {
+margin: 0;
+padding: 0;
+}
+
+.container1 {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+background: #153D77;
+height: 90px;
+justify-content: space-between;
+}
+
+.items {
+padding: 10px;
+}
+
+.item-1 {
+color: white;
+font-family: sans-serif;
+margin: 0.1px solid black;
+margin-left: 4vw;
+}
+
+#sign {
+padding: 10px;
+width: 67px;
+height: 23px;
+border: 1px solid white;
+border-radius: 5px;
+margin-top: 14px;
+font-family: var(--font2);
+transition: all 0.3s ease-in;
+}
+
+#sign:hover {
+color: black;
+background: white;
+}
+
+.item-2 {
+color: white;
+font-family: monospace;
+width: 20vw;
+font-size: 15px;
+margin-right: 35vw;
+}
+
+.nav-bar {
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+border: 1px solid #ccc;
+justify-content: space-between;
+padding-top: -0.5rem;
+padding-bottom: -0.5rem;
+}
+
+.item {
+display: flex;
+flex-direction: column;
+font-family: var(--font1);
+font-size: 18px;
+cursor: pointer;
+justify-content: space-between;
+margin-left: 1vw;
+margin-top: 15px;
+
+}
+
+#link-items {
+color: grey;
+text-decoration: none;
+}
+
+#link-items:hover {
+font-weight: 550;
+color: blue;
+
+}
+
+.item1 {
+color: grey;
+margin-left: 30px;
+
+}
+
+.item2 {
+color: black;
+margin-left: 30px;
+}
+
+.searchbox {
+padding: 5px;
+/* width:200px;
+height:30px; */
+border: 1px solid #fff;
+background-color: white;
+border-radius: 3px;
+margin-left: 42vw;
+/* margin-top: 4px;
+padding-bottom: 1vw; */
+}
+
+.sea-rch {
+border: 0.1px solid blue;
+margin-right: 5vw;
+margin-top: 7px;
+height: 6vh;
+border-radius: 4px;
+margin-left: -10px;
+}
+
+.sea-rch:hover {
+border: 0.1px solid forestgreen;
+}
+
+.search-link {
+text-decoration: none;
+}
+
+#sea-rch {
+width: 80px;
+font-family: var(--font1);
+color: blue;
+margin-left: 5px;
+padding-bottom: 0px;
+margin: 0px;
+}
+
+#sea-rch:hover {
+color: forestgreen;
+}
+
+
+.container3 {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.container3-left {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+margin-top: -20px;
+padding: 0;
+margin: 5vh 5vw 0vh 2vw;
+width: 45vw;
+}
+
+.container3-right {
+margin: 7vh 2vw 0 0vw;
+width: 40vw;
+/* border:1px solid black; */
+border-radius: 50px;
+}
+
+#madefor {
+margin-left: 1vw;
+margin-top: 1vw;
+margin-bottom: 3vh;
+font-size: 18px;
+
+}
+
+#slogan {
+margin-left: 8vw;
+margin-top: 2vw;
+font-size: 28px;
+font-family: var(--font1);
+}
+
+.container3 p {
+font-family: var(--font1);
+margin-left: 12vw;
+margin-top: 25px;
+font-size: 16px;
+/* color:white; */
+}
+
+input {
+outline: none;
+}
+
+.home-articles {
+margin: 0 5vw 0 5vw;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+position: relative;
+}
+
+.year-box {
+position: absolute;
+}
+
+.articles {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.article-1 {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+/* justify-content: space-between; */
+border: 1px solid #bbb;
+border-radius: 30px;
+margin-left: 2vw;
+margin-top: 2vh;
+width: 42vw;
+}
+
+.article-1 span {
+font-family: var(--font1);
+margin-left: 1vw;
+margin-top: 1vw;
+font-size: 16px;
+margin-left: 2vw;
+}
+
+.article-2 {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+border: 1px solid #bbb;
+border-radius: 30px;
+margin: 0vw 5vw 0 45vw;
+}
+
+.article {
+margin-bottom: -4vh;
+}
+
+#article-img {
+width: 13vw;
+border-radius: 27px;
+height: 12vw;
+margin-left: 1vw;
+margin-top: 5vh;
+margin-bottom: 5vh;
+}
+
+
+.contact-content {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.contact-content-right {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+margin: 2vw 10vw;
+}
+
+.form-c {
+width: 40vw;
+height: 3vw;
+font-size: 18px;
+color: black;
+font-family: monospace;
+border: 1px solid #153D77;
+padding: 10px;
+}
+
+.form-t {
+width: 40vw;
+font-size: 18px;
+color: grey;
+border: 1px solid #153D77;
+padding: 10px;
+}
+
+.submit {
+font-weight: bolder;
+font-family: sans-serif;
+margin: 0.1px solid blueviolet;
+}
+
+#submit {
+color: #fff;
+background: #153D77;
+padding-top: 8px;
+width: 8vw;
+height: 6vh;
+border: 1px solid #ccc;
+border-radius: 0px;
+font-family: var(--font2);
+transition: all 0.3s ease-in;
+margin: 2px 2px -6px 2px;
+font-size: 18px;
+}
+
+#submit:hover {
+color: black;
+background: white;
+font-weight: bolder;
+}
+
+
+.footer {
+height: 6vw;
+background: #153D77;
+border: 1px solid #153D77;
+position: relative;
+margin-bottom: 20px;
+}
+
+.footcontent {
+margin-top: 2vw;
+margin-left: 40vw;
+color: white;
+font-family: monospace;
+}
+
+{% endblock %}
+{% block body %}
+{% load static %}
+
+{% block div %} 
+<div class="nav-bar">
+    <div class="item item1"><a href="index" id="link-items" style="text-decoration: none;">Home </a></div>
+    <div class="item item2">Services</div>
+    <div class="item item1"><a href="about" id="link-items" style="text-decoration: none;">About</a></div>
+    <div class="item item1"><a href="contact" id="link-items" style="text-decoration: none;">Contacts</a></div>
+    <div class="searchbox"><input type="text" placeholder="Search Here.."
+            style="border:1px solid #ccc; padding:7px;outline:none;margin-left: 10px;">
+    </div>
+    <div class="sea-rch"><a href="#" class="search-link">
+            <h3 id="sea-rch" class="font1" style="font-size:18px;padding:1.5vh 2vh;">
+                Search</h3>
+        </a></div>
+</div>
+{% endblock %}
+<br><br><br>
+    {% endblock %}
+    <!-- footer part is here -->
+    <footer class="footer">
+        <div class="footcontent " style="font-size: 1.5vw;">
+            <p class="font1">@Copyright &copy : Covi-Care ; </p>
+            <p></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

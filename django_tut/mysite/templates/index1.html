@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!------------------------------------- code to remove punctuations ----------------------------->
+    <h2>Arigotha Gozaimasu, Konnichiwa</h2>
+    <form action="/analyze" method="post">{% csrf_token %}
+        <h1><u>Welcome to Text-Analyzer</u></h1>
+        <span><h3>Enter your name : </h3></span><input type="text" name="name" placeholder="Enter Your name">
+        <span><h3>Enter your views : </h3></span><textarea name="yourviews" id="" cols="30" rows="10"></textarea><br><br>
+        <input type="checkbox" name="removepunc" id="">remove punc <br><br>
+        <input type="checkbox" name="capitalise" id="">capitalise <br><br>
+        <button type="submit">Analyze Text</button> -->
+    </form>
+</body>
+</html>

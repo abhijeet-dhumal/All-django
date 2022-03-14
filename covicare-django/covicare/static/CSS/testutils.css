@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Palette+Mosaic&family=Poppins&family=Pacifico&display=swap');
+:root{
+    --font1:'Baloo Bhaina 2', cursive;
+    --font2: 'Roboto', sans-serif;
+    --font3: 'poppins', sans-serif;
+    --font4: 'palette mosaic', sans-serif;
+    --font5: 'abril fatface', sans-serif;
+    --font6: 'pacifico', sans-serif;
+}
+.font1{
+    font-family: var(--font1);
+}
+.font2{
+    font-family: var(--font2);
+}
+.font3{
+    font-family: var(--font3);
+}
+.font4{
+    font-family: var(--font4);
+}
+.font5{
+    font-family: var(--font5);
+}
+.font6{
+    font-family: var(--font6);
+}

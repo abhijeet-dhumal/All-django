@@ -1,0 +1,920 @@
+(env) PS C:\python_django_projects\portfolio\portfolio> git add . 
+(env) PS C:\python_django_projects\portfolio\portfolio> git commit -m "first commit"    
+On branch master
+nothing to commit, working tree clean
+(env) PS C:\python_django_projects\portfolio\portfolio> git push -u origin main       
+Enumerating objects: 392, done.
+Compressing objects: 100% (385/385), done.
+Writing objects: 100% (392/392), 5.14 MiB | 163.00 KiB/s, done.
+Total 392 (delta 54), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (54/54), done.
+To https://github.com/abhijeet-dhumal/portfolio-abhijeetdhumal.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(env) PS C:\python_django_projects\portfolio\portfolio> python portfolio/manage.py collectstatic --noinput
+C:\Users\aksha\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe: can't open file 'C:\python_django_projects\portfolio\portfolio\portfolio\manage.py': [Errno 2] No such file or directory
+(env) PS C:\python_django_projects\portfolio\portfolio> git add .                                                             le 'C:\python_django_projects\po
+(env) PS C:\python_django_projects\portfolio\portfolio> git commit -m "update"
+[main 2fe5507] update
+ 589 files changed, 62431 deletions(-)
+ delete mode 100644 staticfiles/CSS/api.963a771647fa.css
+ delete mode 100644 staticfiles/CSS/api.963a771647fa.css.gz
+ delete mode 100644 staticfiles/CSS/api.css
+ delete mode 100644 staticfiles/CSS/api.css.gz
+ delete mode 100644 staticfiles/CSS/covicare.214f7a367355.css
+ delete mode 100644 staticfiles/CSS/covicare.214f7a367355.css.gz
+ delete mode 100644 staticfiles/CSS/covicare.css
+ delete mode 100644 staticfiles/CSS/covicare.css.gz
+ delete mode 100644 staticfiles/CSS/testutils.285c20c6973a.css
+ delete mode 100644 staticfiles/CSS/testutils.285c20c6973a.css.gz
+ delete mode 100644 staticfiles/CSS/testutils.css
+ delete mode 100644 staticfiles/CSS/testutils.css.gz
+ delete mode 100644 staticfiles/JavaScript/api.661790cb8259.js
+ delete mode 100644 staticfiles/JavaScript/api.661790cb8259.js.gz
+ delete mode 100644 staticfiles/JavaScript/api.js
+ delete mode 100644 staticfiles/JavaScript/api.js.gz
+ delete mode 100644 staticfiles/README.64b9d2eb55eb.md
+ delete mode 100644 staticfiles/README.md
+ delete mode 100644 staticfiles/admin/css/autocomplete.4a81fc4242d0.css
+ delete mode 100644 staticfiles/admin/css/autocomplete.4a81fc4242d0.css.gz
+ delete mode 100644 staticfiles/admin/css/autocomplete.css
+ delete mode 100644 staticfiles/admin/css/autocomplete.css.gz
+ delete mode 100644 staticfiles/admin/css/base.1f418065fc2c.css
+ delete mode 100644 staticfiles/admin/css/base.1f418065fc2c.css.gz
+ delete mode 100644 staticfiles/admin/css/base.css
+ delete mode 100644 staticfiles/admin/css/base.css.gz
+ delete mode 100644 staticfiles/admin/css/changelists.c70d77c47e69.css
+ delete mode 100644 staticfiles/admin/css/changelists.c70d77c47e69.css.gz
+ delete mode 100644 staticfiles/admin/css/changelists.css
+ delete mode 100644 staticfiles/admin/css/changelists.css.gz
+ delete mode 100644 staticfiles/admin/css/dashboard.be83f13e4369.css
+ delete mode 100644 staticfiles/admin/css/dashboard.be83f13e4369.css.gz
+ delete mode 100644 staticfiles/admin/css/dashboard.css
+ delete mode 100644 staticfiles/admin/css/dashboard.css.gz
+ delete mode 100644 staticfiles/admin/css/fonts.168bab448fee.css
+ delete mode 100644 staticfiles/admin/css/fonts.168bab448fee.css.gz
+ delete mode 100644 staticfiles/admin/css/fonts.css
+ delete mode 100644 staticfiles/admin/css/fonts.css.gz
+ delete mode 100644 staticfiles/admin/css/forms.1d89ec6432f5.css
+ delete mode 100644 staticfiles/admin/css/forms.1d89ec6432f5.css.gz
+ delete mode 100644 staticfiles/admin/css/forms.css
+ delete mode 100644 staticfiles/admin/css/forms.css.gz
+ delete mode 100644 staticfiles/admin/css/login.c35adf41bb6e.css
+ delete mode 100644 staticfiles/admin/css/login.c35adf41bb6e.css.gz
+ delete mode 100644 staticfiles/admin/css/login.css
+ delete mode 100644 staticfiles/admin/css/login.css.gz
+ delete mode 100644 staticfiles/admin/css/nav_sidebar.0fd434145f4d.css
+ delete mode 100644 staticfiles/admin/css/nav_sidebar.0fd434145f4d.css.gz
+ delete mode 100644 staticfiles/admin/css/nav_sidebar.css
+ delete mode 100644 staticfiles/admin/css/nav_sidebar.css.gz
+ delete mode 100644 staticfiles/admin/css/responsive.b128bdf0edef.css
+ delete mode 100644 staticfiles/admin/css/responsive.b128bdf0edef.css.gz
+ delete mode 100644 staticfiles/admin/css/responsive.css
+ delete mode 100644 staticfiles/admin/css/responsive.css.gz
+ delete mode 100644 staticfiles/admin/css/responsive_rtl.css
+ delete mode 100644 staticfiles/admin/css/responsive_rtl.css.gz
+ delete mode 100644 staticfiles/admin/css/responsive_rtl.e13ae754cceb.css
+ delete mode 100644 staticfiles/admin/css/responsive_rtl.e13ae754cceb.css.gz
+ delete mode 100644 staticfiles/admin/css/rtl.4bc23eb90919.css
+ delete mode 100644 staticfiles/admin/css/rtl.4bc23eb90919.css.gz
+ delete mode 100644 staticfiles/admin/css/rtl.css
+ delete mode 100644 staticfiles/admin/css/rtl.css.gz
+ delete mode 100644 staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.f94142512c91.md
+ delete mode 100644 staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.f94142512c91.md.gz
+ delete mode 100644 staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.md
+ delete mode 100644 staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.md.gz
+ delete mode 100644 staticfiles/admin/css/vendor/select2/select2.a2194c262648.css
+ delete mode 100644 staticfiles/admin/css/vendor/select2/select2.a2194c262648.css.gz
+ delete mode 100644 staticfiles/admin/css/vendor/select2/select2.css
+ delete mode 100644 staticfiles/admin/css/vendor/select2/select2.css.gz
+ delete mode 100644 staticfiles/admin/css/vendor/select2/select2.min.9f54e6414f87.css
+ delete mode 100644 staticfiles/admin/css/vendor/select2/select2.min.9f54e6414f87.css.gz
+ delete mode 100644 staticfiles/admin/css/vendor/select2/select2.min.css
+ delete mode 100644 staticfiles/admin/css/vendor/select2/select2.min.css.gz
+ delete mode 100644 staticfiles/admin/css/widgets.694d845b2cb1.css
+ delete mode 100644 staticfiles/admin/css/widgets.694d845b2cb1.css.gz
+ delete mode 100644 staticfiles/admin/css/widgets.css
+ delete mode 100644 staticfiles/admin/css/widgets.css.gz
+ delete mode 100644 staticfiles/admin/fonts/LICENSE.d273d63619c9.txt
+ delete mode 100644 staticfiles/admin/fonts/LICENSE.d273d63619c9.txt.gz
+ delete mode 100644 staticfiles/admin/fonts/LICENSE.txt
+ delete mode 100644 staticfiles/admin/fonts/LICENSE.txt.gz
+ delete mode 100644 staticfiles/admin/fonts/README.ab99e6b541ea.txt
+ delete mode 100644 staticfiles/admin/fonts/README.ab99e6b541ea.txt.gz
+ delete mode 100644 staticfiles/admin/fonts/README.txt
+ delete mode 100644 staticfiles/admin/fonts/README.txt.gz
+ delete mode 100644 staticfiles/admin/fonts/Roboto-Bold-webfont.50d75e48e0a3.woff
+ delete mode 100644 staticfiles/admin/fonts/Roboto-Bold-webfont.woff
+ delete mode 100644 staticfiles/admin/fonts/Roboto-Light-webfont.c73eb1ceba33.woff
+ delete mode 100644 staticfiles/admin/fonts/Roboto-Light-webfont.woff
+ delete mode 100644 staticfiles/admin/fonts/Roboto-Regular-webfont.35b07eb2f871.woff
+ delete mode 100644 staticfiles/admin/fonts/Roboto-Regular-webfont.woff
+ delete mode 100644 staticfiles/admin/img/LICENSE
+ delete mode 100644 staticfiles/admin/img/LICENSE.2c54f4e1ca1c
+ delete mode 100644 staticfiles/admin/img/LICENSE.2c54f4e1ca1c.gz
+ delete mode 100644 staticfiles/admin/img/LICENSE.gz
+ delete mode 100644 staticfiles/admin/img/README.a70711a38d87.txt
+ delete mode 100644 staticfiles/admin/img/README.a70711a38d87.txt.gz
+ delete mode 100644 staticfiles/admin/img/README.txt
+ delete mode 100644 staticfiles/admin/img/README.txt.gz
+ delete mode 100644 staticfiles/admin/img/calendar-icons.39b290681a8b.svg
+ delete mode 100644 staticfiles/admin/img/calendar-icons.39b290681a8b.svg.gz
+ delete mode 100644 staticfiles/admin/img/calendar-icons.svg
+ delete mode 100644 staticfiles/admin/img/calendar-icons.svg.gz
+ delete mode 100644 staticfiles/admin/img/gis/move_vertex_off.7a23bf31ef8a.svg
+ delete mode 100644 staticfiles/admin/img/gis/move_vertex_off.7a23bf31ef8a.svg.gz
+ delete mode 100644 staticfiles/admin/img/gis/move_vertex_off.svg
+ delete mode 100644 staticfiles/admin/img/gis/move_vertex_off.svg.gz
+ delete mode 100644 staticfiles/admin/img/gis/move_vertex_on.0047eba25b67.svg
+ delete mode 100644 staticfiles/admin/img/gis/move_vertex_on.0047eba25b67.svg.gz
+ delete mode 100644 staticfiles/admin/img/gis/move_vertex_on.svg
+ delete mode 100644 staticfiles/admin/img/gis/move_vertex_on.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-addlink.d519b3bab011.svg
+ delete mode 100644 staticfiles/admin/img/icon-addlink.d519b3bab011.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-addlink.svg
+ delete mode 100644 staticfiles/admin/img/icon-addlink.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-alert.034cc7d8a67f.svg
+ delete mode 100644 staticfiles/admin/img/icon-alert.034cc7d8a67f.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-alert.svg
+ delete mode 100644 staticfiles/admin/img/icon-alert.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-calendar.ac7aea671bea.svg
+ delete mode 100644 staticfiles/admin/img/icon-calendar.ac7aea671bea.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-calendar.svg
+ delete mode 100644 staticfiles/admin/img/icon-calendar.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-changelink.18d2fd706348.svg
+ delete mode 100644 staticfiles/admin/img/icon-changelink.18d2fd706348.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-changelink.svg
+ delete mode 100644 staticfiles/admin/img/icon-changelink.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-clock.e1d4dfac3f2b.svg
+ delete mode 100644 staticfiles/admin/img/icon-clock.e1d4dfac3f2b.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-clock.svg
+ delete mode 100644 staticfiles/admin/img/icon-clock.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-deletelink.564ef9dc3854.svg
+ delete mode 100644 staticfiles/admin/img/icon-deletelink.564ef9dc3854.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-deletelink.svg
+ delete mode 100644 staticfiles/admin/img/icon-deletelink.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-no.439e821418cd.svg
+ delete mode 100644 staticfiles/admin/img/icon-no.439e821418cd.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-no.svg
+ delete mode 100644 staticfiles/admin/img/icon-no.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-unknown-alt.81536e128bb6.svg
+ delete mode 100644 staticfiles/admin/img/icon-unknown-alt.81536e128bb6.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-unknown-alt.svg
+ delete mode 100644 staticfiles/admin/img/icon-unknown-alt.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-unknown.a18cb4398978.svg
+ delete mode 100644 staticfiles/admin/img/icon-unknown.a18cb4398978.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-unknown.svg
+ delete mode 100644 staticfiles/admin/img/icon-unknown.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-viewlink.41eb31f7826e.svg
+ delete mode 100644 staticfiles/admin/img/icon-viewlink.41eb31f7826e.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-viewlink.svg
+ delete mode 100644 staticfiles/admin/img/icon-viewlink.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-yes.d2f9f035226a.svg
+ delete mode 100644 staticfiles/admin/img/icon-yes.d2f9f035226a.svg.gz
+ delete mode 100644 staticfiles/admin/img/icon-yes.svg
+ delete mode 100644 staticfiles/admin/img/icon-yes.svg.gz
+ delete mode 100644 staticfiles/admin/img/inline-delete.fec1b761f254.svg
+ delete mode 100644 staticfiles/admin/img/inline-delete.fec1b761f254.svg.gz
+ delete mode 100644 staticfiles/admin/img/inline-delete.svg
+ delete mode 100644 staticfiles/admin/img/inline-delete.svg.gz
+ delete mode 100644 staticfiles/admin/img/search.7cf54ff789c6.svg
+ delete mode 100644 staticfiles/admin/img/search.7cf54ff789c6.svg.gz
+ delete mode 100644 staticfiles/admin/img/search.svg
+ delete mode 100644 staticfiles/admin/img/search.svg.gz
+ delete mode 100644 staticfiles/admin/img/selector-icons.b4555096cea2.svg
+ delete mode 100644 staticfiles/admin/img/selector-icons.b4555096cea2.svg.gz
+ delete mode 100644 staticfiles/admin/img/selector-icons.svg
+ delete mode 100644 staticfiles/admin/img/selector-icons.svg.gz
+ delete mode 100644 staticfiles/admin/img/sorting-icons.3a097b59f104.svg
+ delete mode 100644 staticfiles/admin/img/sorting-icons.3a097b59f104.svg.gz
+ delete mode 100644 staticfiles/admin/img/sorting-icons.svg
+ delete mode 100644 staticfiles/admin/img/sorting-icons.svg.gz
+ delete mode 100644 staticfiles/admin/img/tooltag-add.e59d620a9742.svg
+ delete mode 100644 staticfiles/admin/img/tooltag-add.e59d620a9742.svg.gz
+ delete mode 100644 staticfiles/admin/img/tooltag-add.svg
+ delete mode 100644 staticfiles/admin/img/tooltag-add.svg.gz
+ delete mode 100644 staticfiles/admin/img/tooltag-arrowright.bbfb788a849e.svg
+ delete mode 100644 staticfiles/admin/img/tooltag-arrowright.bbfb788a849e.svg.gz
+ delete mode 100644 staticfiles/admin/img/tooltag-arrowright.svg
+ delete mode 100644 staticfiles/admin/img/tooltag-arrowright.svg.gz
+ delete mode 100644 staticfiles/admin/js/SelectBox.8161741c7647.js
+ delete mode 100644 staticfiles/admin/js/SelectBox.8161741c7647.js.gz
+ delete mode 100644 staticfiles/admin/js/SelectBox.js
+ delete mode 100644 staticfiles/admin/js/SelectBox.js.gz
+ delete mode 100644 staticfiles/admin/js/SelectFilter2.d250dcb52a9a.js
+ delete mode 100644 staticfiles/admin/js/SelectFilter2.d250dcb52a9a.js.gz
+ delete mode 100644 staticfiles/admin/js/SelectFilter2.js
+ delete mode 100644 staticfiles/admin/js/SelectFilter2.js.gz
+ delete mode 100644 staticfiles/admin/js/actions.3edba334d0a4.js
+ delete mode 100644 staticfiles/admin/js/actions.3edba334d0a4.js.gz
+ delete mode 100644 staticfiles/admin/js/actions.js
+ delete mode 100644 staticfiles/admin/js/actions.js.gz
+ delete mode 100644 staticfiles/admin/js/admin/DateTimeShortcuts.5548f99471bf.js
+ delete mode 100644 staticfiles/admin/js/admin/DateTimeShortcuts.5548f99471bf.js.gz
+ delete mode 100644 staticfiles/admin/js/admin/DateTimeShortcuts.js
+ delete mode 100644 staticfiles/admin/js/admin/DateTimeShortcuts.js.gz
+ delete mode 100644 staticfiles/admin/js/admin/RelatedObjectLookups.b4d76b6aaf0b.js
+ delete mode 100644 staticfiles/admin/js/admin/RelatedObjectLookups.b4d76b6aaf0b.js.gz
+ delete mode 100644 staticfiles/admin/js/admin/RelatedObjectLookups.js
+ delete mode 100644 staticfiles/admin/js/admin/RelatedObjectLookups.js.gz
+ delete mode 100644 staticfiles/admin/js/autocomplete.b6b77d0e5906.js
+ delete mode 100644 staticfiles/admin/js/autocomplete.b6b77d0e5906.js.gz
+ delete mode 100644 staticfiles/admin/js/autocomplete.js
+ delete mode 100644 staticfiles/admin/js/autocomplete.js.gz
+ delete mode 100644 staticfiles/admin/js/calendar.f8a5d055eb33.js
+ delete mode 100644 staticfiles/admin/js/calendar.f8a5d055eb33.js.gz
+ delete mode 100644 staticfiles/admin/js/calendar.js
+ delete mode 100644 staticfiles/admin/js/calendar.js.gz
+ delete mode 100644 staticfiles/admin/js/cancel.ecc4c5ca7b32.js
+ delete mode 100644 staticfiles/admin/js/cancel.ecc4c5ca7b32.js.gz
+ delete mode 100644 staticfiles/admin/js/cancel.js
+ delete mode 100644 staticfiles/admin/js/cancel.js.gz
+ delete mode 100644 staticfiles/admin/js/change_form.9d8ca4f96b75.js
+ delete mode 100644 staticfiles/admin/js/change_form.9d8ca4f96b75.js.gz
+ delete mode 100644 staticfiles/admin/js/change_form.js
+ delete mode 100644 staticfiles/admin/js/change_form.js.gz
+ delete mode 100644 staticfiles/admin/js/collapse.f84e7410290f.js
+ delete mode 100644 staticfiles/admin/js/collapse.f84e7410290f.js.gz
+ delete mode 100644 staticfiles/admin/js/collapse.js
+ delete mode 100644 staticfiles/admin/js/collapse.js.gz
+ delete mode 100644 staticfiles/admin/js/core.ccd84108ec57.js
+ delete mode 100644 staticfiles/admin/js/core.ccd84108ec57.js.gz
+ delete mode 100644 staticfiles/admin/js/core.js
+ delete mode 100644 staticfiles/admin/js/core.js.gz
+ delete mode 100644 staticfiles/admin/js/inlines.7596b7fd289e.js
+ delete mode 100644 staticfiles/admin/js/inlines.7596b7fd289e.js.gz
+ delete mode 100644 staticfiles/admin/js/inlines.js
+ delete mode 100644 staticfiles/admin/js/inlines.js.gz
+ delete mode 100644 staticfiles/admin/js/jquery.init.b7781a0897fc.js
+ delete mode 100644 staticfiles/admin/js/jquery.init.b7781a0897fc.js.gz
+ delete mode 100644 staticfiles/admin/js/jquery.init.js
+ delete mode 100644 staticfiles/admin/js/jquery.init.js.gz
+ delete mode 100644 staticfiles/admin/js/nav_sidebar.7605597ddf52.js
+ delete mode 100644 staticfiles/admin/js/nav_sidebar.7605597ddf52.js.gz
+ delete mode 100644 staticfiles/admin/js/nav_sidebar.js
+ delete mode 100644 staticfiles/admin/js/nav_sidebar.js.gz
+ delete mode 100644 staticfiles/admin/js/popup_response.c6cc78ea5551.js
+ delete mode 100644 staticfiles/admin/js/popup_response.c6cc78ea5551.js.gz
+ delete mode 100644 staticfiles/admin/js/popup_response.js
+ delete mode 100644 staticfiles/admin/js/popup_response.js.gz
+ delete mode 100644 staticfiles/admin/js/prepopulate.bd2361dfd64d.js
+ delete mode 100644 staticfiles/admin/js/prepopulate.bd2361dfd64d.js.gz
+ delete mode 100644 staticfiles/admin/js/prepopulate.js
+ delete mode 100644 staticfiles/admin/js/prepopulate.js.gz
+ delete mode 100644 staticfiles/admin/js/prepopulate_init.e056047b7a7e.js
+ delete mode 100644 staticfiles/admin/js/prepopulate_init.e056047b7a7e.js.gz
+ delete mode 100644 staticfiles/admin/js/prepopulate_init.js
+ delete mode 100644 staticfiles/admin/js/prepopulate_init.js.gz
+ delete mode 100644 staticfiles/admin/js/urlify.25cc3eac8123.js
+ delete mode 100644 staticfiles/admin/js/urlify.25cc3eac8123.js.gz
+ delete mode 100644 staticfiles/admin/js/urlify.js
+ delete mode 100644 staticfiles/admin/js/urlify.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/jquery/LICENSE.75308107741f.txt
+ delete mode 100644 staticfiles/admin/js/vendor/jquery/LICENSE.75308107741f.txt.gz
+ delete mode 100644 staticfiles/admin/js/vendor/jquery/LICENSE.txt
+ delete mode 100644 staticfiles/admin/js/vendor/jquery/LICENSE.txt.gz
+ delete mode 100644 staticfiles/admin/js/vendor/jquery/jquery.23c7c5d2d131.js
+ delete mode 100644 staticfiles/admin/js/vendor/jquery/jquery.23c7c5d2d131.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/jquery/jquery.js
+ delete mode 100644 staticfiles/admin/js/vendor/jquery/jquery.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/jquery/jquery.min.dc5e7f18c8d3.js
+ delete mode 100644 staticfiles/admin/js/vendor/jquery/jquery.min.dc5e7f18c8d3.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/jquery/jquery.min.js
+ delete mode 100644 staticfiles/admin/js/vendor/jquery/jquery.min.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/LICENSE.f94142512c91.md
+ delete mode 100644 staticfiles/admin/js/vendor/select2/LICENSE.f94142512c91.md.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/LICENSE.md
+ delete mode 100644 staticfiles/admin/js/vendor/select2/LICENSE.md.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/af.4f6fcd73488c.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/af.4f6fcd73488c.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/af.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/af.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ar.65aa8e36bf5d.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ar.65aa8e36bf5d.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ar.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ar.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/az.270c257daf81.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/az.270c257daf81.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/az.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/az.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/bg.39b8be30d4f0.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/bg.39b8be30d4f0.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/bg.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/bg.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/bn.6d42b4dd5665.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/bn.6d42b4dd5665.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/bn.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/bn.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/bs.91624382358e.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/bs.91624382358e.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/bs.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/bs.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ca.a166b745933a.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ca.a166b745933a.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ca.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ca.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/cs.4f43e8e7d33a.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/cs.4f43e8e7d33a.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/cs.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/cs.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/da.766346afe4dd.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/da.766346afe4dd.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/da.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/da.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/de.8a1c222b0204.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/de.8a1c222b0204.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/de.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/de.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/dsb.56372c92d2f1.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/dsb.56372c92d2f1.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/dsb.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/dsb.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/el.27097f071856.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/el.27097f071856.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/el.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/el.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/en.cf932ba09a98.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/en.cf932ba09a98.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/en.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/en.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/es.66dbc2652fb1.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/es.66dbc2652fb1.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/es.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/es.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/et.2b96fd98289d.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/et.2b96fd98289d.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/et.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/et.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/eu.adfe5c97b72c.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/eu.adfe5c97b72c.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/eu.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/eu.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/fa.3b5bd1961cfd.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/fa.3b5bd1961cfd.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/fa.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/fa.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/fi.614ec42aa9ba.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/fi.614ec42aa9ba.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/fi.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/fi.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/fr.05e0542fcfe6.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/fr.05e0542fcfe6.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/fr.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/fr.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/gl.d99b1fedaa86.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/gl.d99b1fedaa86.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/gl.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/gl.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/he.e420ff6cd3ed.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/he.e420ff6cd3ed.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/he.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/he.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hi.70640d41628f.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hi.70640d41628f.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hi.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hi.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hr.a2b092cc1147.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hr.a2b092cc1147.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hr.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hr.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hsb.fa3b55265efe.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hsb.fa3b55265efe.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hsb.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hsb.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hu.6ec6039cb8a3.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hu.6ec6039cb8a3.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hu.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hu.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hy.c7babaeef5a6.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hy.c7babaeef5a6.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hy.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/hy.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/id.04debded514d.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/id.04debded514d.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/id.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/id.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/is.3ddd9a6a97e9.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/is.3ddd9a6a97e9.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/is.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/is.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/it.be4fe8d365b5.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/it.be4fe8d365b5.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/it.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/it.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ja.170ae885d74f.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ja.170ae885d74f.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ja.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ja.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ka.2083264a54f0.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ka.2083264a54f0.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ka.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ka.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/km.c23089cb06ca.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/km.c23089cb06ca.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/km.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/km.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ko.e7be6c20e673.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ko.e7be6c20e673.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ko.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ko.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/lt.23c7ce903300.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/lt.23c7ce903300.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/lt.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/lt.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/lv.08e62128eac1.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/lv.08e62128eac1.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/lv.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/lv.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/mk.dabbb9087130.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/mk.dabbb9087130.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/mk.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/mk.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ms.4ba82c9a51ce.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ms.4ba82c9a51ce.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ms.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ms.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/nb.da2fce143f27.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/nb.da2fce143f27.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/nb.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/nb.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ne.3d79fd3f08db.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ne.3d79fd3f08db.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ne.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ne.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/nl.997868a37ed8.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/nl.997868a37ed8.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/nl.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/nl.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/pl.6031b4f16452.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/pl.6031b4f16452.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/pl.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/pl.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ps.38dfa47af9e0.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ps.38dfa47af9e0.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ps.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ps.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/pt-BR.e1b294433e7f.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/pt-BR.e1b294433e7f.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/pt-BR.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/pt-BR.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/pt.33b4a3b44d43.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/pt.33b4a3b44d43.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/pt.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/pt.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ro.f75cb460ec3b.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ro.f75cb460ec3b.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ro.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ro.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ru.934aa95f5b5f.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ru.934aa95f5b5f.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ru.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/ru.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sk.33d02cef8d11.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sk.33d02cef8d11.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sk.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sk.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sl.131a78bc0752.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sl.131a78bc0752.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sl.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sl.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sq.5636b60d29c9.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sq.5636b60d29c9.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sq.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sq.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.f254bb8c4c7c.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.f254bb8c4c7c.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sr.5ed85a48f483.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sr.5ed85a48f483.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sr.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sr.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sv.7a9c2f71e777.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sv.7a9c2f71e777.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sv.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/sv.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/th.f38c20b0221b.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/th.f38c20b0221b.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/th.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/th.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/tk.7c572a68c78f.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/tk.7c572a68c78f.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/tk.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/tk.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/tr.b5a0643d1545.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/tr.b5a0643d1545.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/tr.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/tr.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/uk.8cede7f4803c.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/uk.8cede7f4803c.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/uk.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/uk.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/vi.097a5b75b3e1.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/vi.097a5b75b3e1.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/vi.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/vi.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/zh-CN.2cff662ec5f9.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/zh-CN.2cff662ec5f9.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/zh-CN.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/zh-CN.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/zh-TW.04554a227c2b.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/zh-TW.04554a227c2b.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/zh-TW.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/i18n/zh-TW.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/select2.full.c2afdeda3058.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/select2.full.c2afdeda3058.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/select2.full.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/select2.full.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/select2.full.min.fcd7500d8e13.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/select2.full.min.fcd7500d8e13.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/select2/select2.full.min.js
+ delete mode 100644 staticfiles/admin/js/vendor/select2/select2.full.min.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/xregexp/LICENSE.bf79e414957a.txt
+ delete mode 100644 staticfiles/admin/js/vendor/xregexp/LICENSE.bf79e414957a.txt.gz
+ delete mode 100644 staticfiles/admin/js/vendor/xregexp/LICENSE.txt
+ delete mode 100644 staticfiles/admin/js/vendor/xregexp/LICENSE.txt.gz
+ delete mode 100644 staticfiles/admin/js/vendor/xregexp/xregexp.efda034b9537.js
+ delete mode 100644 staticfiles/admin/js/vendor/xregexp/xregexp.efda034b9537.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/xregexp/xregexp.js
+ delete mode 100644 staticfiles/admin/js/vendor/xregexp/xregexp.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/xregexp/xregexp.min.b0439563a5d3.js
+ delete mode 100644 staticfiles/admin/js/vendor/xregexp/xregexp.min.b0439563a5d3.js.gz
+ delete mode 100644 staticfiles/admin/js/vendor/xregexp/xregexp.min.js
+ delete mode 100644 staticfiles/admin/js/vendor/xregexp/xregexp.min.js.gz
+ delete mode 100644 staticfiles/images/Abhijeet.f0857bf6d398.jpg
+ delete mode 100644 staticfiles/images/Abhijeet.jpg
+ delete mode 100644 staticfiles/images/IMG_20210219_113331.a3ab9624970d.jpg
+ delete mode 100644 staticfiles/images/IMG_20210219_113331.jpg
+ delete mode 100644 staticfiles/images/IMG_20210219_113331_1.f0857bf6d398.jpg
+ delete mode 100644 staticfiles/images/IMG_20210219_113331_1.jpg
+ delete mode 100644 staticfiles/images/IMG_20210219_113331_Zii3Qdx.a3ab9624970d.jpg
+ delete mode 100644 staticfiles/images/IMG_20210219_113331_Zii3Qdx.jpg
+ delete mode 100644 staticfiles/images/boy-face (1).3298f1d905d6.png
+ delete mode 100644 staticfiles/images/boy-face (1).png
+ delete mode 100644 staticfiles/images/boy-face.1df333afd5ea.png
+ delete mode 100644 staticfiles/images/boy-face.png
+ delete mode 100644 staticfiles/images/call-center.130dbcb7c3d7.jpg
+ delete mode 100644 staticfiles/images/call-center.jpg
+ delete mode 100644 staticfiles/images/components.73182dc63040.jpg
+ delete mode 100644 staticfiles/images/components.jpg
+ delete mode 100644 staticfiles/images/contact us.17961d532665.jpg
+ delete mode 100644 staticfiles/images/contact us.jpg
+ delete mode 100644 staticfiles/images/covi.50c90d667b6e.jpg
+ delete mode 100644 staticfiles/images/covi.jpg
+ delete mode 100644 staticfiles/images/doctor,nurse.270f1773bc6b.jpg
+ delete mode 100644 staticfiles/images/doctor,nurse.jpg
+ delete mode 100644 staticfiles/images/facebook (2).6c724905c31d.png
+ delete mode 100644 staticfiles/images/facebook (2).png
+ delete mode 100644 staticfiles/images/facebook 1.e211fe8a5f27.png
+ delete mode 100644 staticfiles/images/facebook 1.png
+ delete mode 100644 staticfiles/images/facebook.169d6f684545.png
+ delete mode 100644 staticfiles/images/facebook.png
+ delete mode 100644 staticfiles/images/facebook2.6d53a8c32a92.png
+ delete mode 100644 staticfiles/images/facebook2.png
+ delete mode 100644 staticfiles/images/fusion-medical-animation-rnr8D3FNUNY-unsplash.43707003ae49.jpg
+ delete mode 100644 staticfiles/images/fusion-medical-animation-rnr8D3FNUNY-unsplash.jpg
+ delete mode 100644 staticfiles/images/imresizer.com.07668a499375.jpg
+ delete mode 100644 staticfiles/images/imresizer.com.jpg
+ delete mode 100644 staticfiles/images/imresizer.com_dnINmBJ.07668a499375.jpg
+ delete mode 100644 staticfiles/images/imresizer.com_dnINmBJ.jpg
+ delete mode 100644 staticfiles/images/instagram (2).ad9fd5eae8eb.png
+ delete mode 100644 staticfiles/images/instagram (2).png
+ delete mode 100644 staticfiles/images/instagram (3).f9bdc92be10e.png
+ delete mode 100644 staticfiles/images/instagram (3).png
+ delete mode 100644 staticfiles/images/instagram (4).2685c85d8c0a.png
+ delete mode 100644 staticfiles/images/instagram (4).png
+ delete mode 100644 staticfiles/images/instagram.5c570427ee23.png
+ delete mode 100644 staticfiles/images/instagram.png
+ delete mode 100644 staticfiles/images/linkedin (2).59d2da8a4cc1.png
+ delete mode 100644 staticfiles/images/linkedin (2).png
+ delete mode 100644 staticfiles/images/linkedin (3).a073ecdfc088.png
+ delete mode 100644 staticfiles/images/linkedin (3).png
+ delete mode 100644 staticfiles/images/linkedin (4).b84b9db9020f.png
+ delete mode 100644 staticfiles/images/linkedin (4).png
+ delete mode 100644 staticfiles/images/linkedin.30c453b7f5fb.png
+ delete mode 100644 staticfiles/images/linkedin.png
+ delete mode 100644 staticfiles/images/pract.38a70ad129d8.exe
+ delete mode 100644 staticfiles/images/pract.exe
+ delete mode 100644 staticfiles/images/pract.exe.gz
+ delete mode 100644 staticfiles/images/typewriter.5a945b271c1a.jpg
+ delete mode 100644 staticfiles/images/typewriter.jpg
+ delete mode 100644 staticfiles/images/user.b8982e196d7c.png
+ delete mode 100644 staticfiles/images/user.png
+ delete mode 100644 staticfiles/images/user_1.29479ba04357.png
+ delete mode 100644 staticfiles/images/user_1.png
+ delete mode 100644 staticfiles/images/virus-bg.54187911ef6b.jpg
+ delete mode 100644 staticfiles/images/virus-bg.jpg
+ delete mode 100644 staticfiles/staticfiles.json
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 238 bytes | 119.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+To https://github.com/abhijeet-dhumal/portfolio-abhijeetdhumal.git
+   971e055..2fe5507  main -> main
+(env) PS C:\python_django_projects\portfolio\portfolio> git commit -m "reupdate"
+On branch main
+
+nothing to commit, working tree clean
+(env) PS C:\python_django_projects\portfolio\portfolio> git push -u origin main
+Everything up-to-date
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(env) PS C:\python_django_projects\portfolio\portfolio> echo "web: gunicorn portfolio.wsgi --log-file -" > procfile
+(env) PS C:\python_django_projects\portfolio\portfolio> echo "web: gunicorn Portfolio.wsgi --log-file -" > Procfile
+(env) PS C:\python_django_projects\portfolio\portfolio> git add .
+(env) PS C:\python_django_projects\portfolio\portfolio> git commit -m "reupdate"
+[main a8241e1] reupdate
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/abhijeet-dhumal/portfolio-abhijeetdhumal.git
+   2fe5507..a8241e1  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(env) PS C:\python_django_projects\portfolio\portfolio> git add .
+(env) PS C:\python_django_projects\portfolio\portfolio> git commit -m "reupdate"
+[main ab1c828] reupdate
+ 2 files changed, 1 insertion(+)
+ delete mode 100644 Procfile
+(env) PS C:\python_django_projects\portfolio\portfolio> git push -u origin main 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 317 bytes | 105.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+To https://github.com/abhijeet-dhumal/portfolio-abhijeetdhumal.git
+   a8241e1..ab1c828  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku logs --tail
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku logs
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku logs --tail  --app portfolio-abhijeetdhumal
+2021-10-18T11:27:39.009725+00:00 app[api]: Release v1 created by user abhijeetdhumal652@gmail.com
+2021-10-18T11:27:39.009725+00:00 app[api]: Initial release by user abhijeetdhumal652@gmail.com
+2021-10-18T11:27:39.166721+00:00 app[api]: Release v2 created by user abhijeetdhumal652@gmail.com
+2021-10-18T11:27:39.166721+00:00 app[api]: Enable Logplex by user abhijeetdhumal652@gmail.com
+2021-10-18T11:28:54.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:29:30.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/aedbf092-272c-4324-94d9-d800dba1cd0f/activity/builds/b873030a-cb4b-403e-beae-dce169b43fb4
+2021-10-18T11:33:38.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:34:14.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/aedbf092-272c-4324-94d9-d800dba1cd0f/activity/builds/8af64015-73f8-4a46-a88c-4369523cb0b4
+2021-10-18T11:37:36.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:38:08.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/aedbf092-272c-4324-94d9-d800dba1cd0f/activity/builds/763b5b66-e635-4e81-a429-c659c9616acd
+2021-10-18T11:41:59.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:42:33.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/aedbf092-272c-4324-94d9-d800dba1cd0f/activity/builds/2d1e2dcf-cc28-46c3-94a7-c51ef63fc31b
+2021-10-18T11:47:31.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.200485+00:00 app[api]: Attach DATABASE (@ref:postgresql-rugged-65998) by user abhijeetdhumal652@gmail.com 
+2021-10-18T11:48:20.200485+00:00 app[api]: Running release v3 commands by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.214125+00:00 app[api]: Release v4 created by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.214125+00:00 app[api]: @ref:postgresql-rugged-65998 completed provisioning, setting DATABASE_URL. by user 
+abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.537786+00:00 app[api]: Release v5 created by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.537786+00:00 app[api]: Deploy ab1c8284 by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:32.000000+00:00 app[api]: Build succeeded
+2021-10-18T11:48:39.192067+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=ce6ec14c-4871-48dc-801b-2f1cd928c129 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:48:40.195474+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=806491b4-0984-4c25-b5e2-3766639734b0 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:51:07.902461+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=295fde0b-4519-4d19-ab0b-4c0ab14e4f8f fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:51:08.607641+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=3f34194b-f42f-4940-8921-5815829ef63c fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:53:33.380945+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=poce= status=503 bytes= protocol=https
+2021-10-18T11:53:33.873729+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=b12a1f6a-40ad-4c35-8294-0fd7c61d832d fwd="106.220.225.38" dyno= con2021-10-18T11:54:20.152775+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=poce= status=503 bytes= protocol=https
+co" host=portfolio-abhijeetdhumal.herokuapp.com request_id=3986bbfa-46e5-4b34-8628-ca8e9e7dbdd3 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+^CTerminate batch job (Y/N)? y
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku restart --app portfolio-abhijeetdhumal     
+Restarting dynos on ⬢ portfolio-abhijeetdhumal... done
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku restart --app portfolio-abhijeetdhumal
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku ps:scale web=1
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku ps:scale web=1 -app portfolio-abhijeetdhumal
+Scaling dynos... !
+ !    Couldn't find that app.
+(env) PS C:\python_django_projects\portfolio\portfolio> pip install gunicorn
+Requirement already satisfied: gunicorn in c:\python_django_projects\portfolio\env\lib\site-packages (20.1.0)
+Requirement already satisfied: setuptools>=3.0 in c:\python_django_projects\portfolio\env\lib\site-packages (from gunicorn) (5(env) PS C:\python_django_projects\portfolio\portfolio> heroku ps
+ »   Error: Missing required flag:
+ »   See more help with --help
+Free dyno hours quota remaining this month: 550h 0m (100%)
+Free dyno usage for this app: 0h 0m (0%)
+https://devcenter.heroku.com/articles/dyno-sleeping
+
+No dynos on ⬢ portfolio-abhijeetdhumal
+ »   Error: Unexpected argument: portfolio-abhijeetdhumal
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku ps:restart web.1 --app portfolio-abhijeetdhumal
+Restarting web.1 dyno on ⬢ portfolio-abhijeetdhumal... done
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku ps:scale web=1 --app portfolio-abhijeetdhumal  
+ !    Couldn't find that process type (web).
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku buildpacks:clear
+ »   Error: Missing required flag:
+ »   See more help with --help
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku buildpacks:clear --app portfolio-abhijeetdhumal
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku buildpacks:add
+ »   buildpack  namespace/name of the buildpack
+ »   See more help with --help
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku buildpacks:add --app portfolio-abhijeetdhumal  
+ »   Error: Missing 1 required arg:
+ »   buildpack  namespace/name of the buildpack
+Buildpack set. Next release on portfolio-abhijeetdhumal will use heroku/python.
+Run git push heroku main to create a new release using this buildpack.
+(env) PS C:\python_django_projects\portfolio\portfolio> git commit --allow-empty -m "Adjust buildpacks on Heroku"
+[main 430604a] Adjust buildpacks on Heroku
+(env) PS C:\python_django_projects\portfolio\portfolio> git push heroku main  
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(env) PS C:\python_django_projects\portfolio\portfolio> git add .                                                             
+(env) PS C:\python_django_projects\portfolio\portfolio> git commit -m "reupdate"                                              
+On branch main
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(env) PS C:\python_django_projects\portfolio\portfolio> git push -u origin main                                               
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 216 bytes | 108.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/abhijeet-dhumal/portfolio-abhijeetdhumal.git
+   ab1c828..430604a  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku logs --tail  --app portfolio-abhijeetdhumal                    
+2021-10-18T11:27:39.009725+00:00 app[api]: Release v1 created by user abhijeetdhumal652@gmail.com
+2021-10-18T11:27:39.009725+00:00 app[api]: Initial release by user abhijeetdhumal652@gmail.com
+2021-10-18T11:27:39.166721+00:00 app[api]: Release v2 created by user abhijeetdhumal652@gmail.com
+2021-10-18T11:27:39.166721+00:00 app[api]: Enable Logplex by user abhijeetdhumal652@gmail.com
+2021-10-18T11:28:54.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:29:30.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/aedbf092-272c-4324-94d9-d800dba1cd0f/activity/builds/b873030a-cb4b-403e-beae-dce169b43fb4
+2021-10-18T11:33:38.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:34:14.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/aedbf092-272c-4324-94d9-d800dba1cd0f/activity/builds/8af64015-73f8-4a46-a88c-4369523cb0b4
+2021-10-18T11:37:36.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:38:08.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/aedbf092-272c-4324-94d9-d800dba1cd0f/activity/builds/763b5b66-e635-4e81-a429-c659c9616acd
+2021-10-18T11:41:59.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:42:33.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/aedbf092-272c-4324-94d9-d800dba1cd0f/activity/builds/2d1e2dcf-cc28-46c3-94a7-c51ef63fc31b
+2021-10-18T11:47:31.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.200485+00:00 app[api]: Attach DATABASE (@ref:postgresql-rugged-65998) by user abhijeetdhumal652@gmail.com 
+2021-10-18T11:48:20.200485+00:00 app[api]: Running release v3 commands by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.214125+00:00 app[api]: Release v4 created by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.214125+00:00 app[api]: @ref:postgresql-rugged-65998 completed provisioning, setting DATABASE_URL. by user 
+abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.537786+00:00 app[api]: Release v5 created by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.537786+00:00 app[api]: Deploy ab1c8284 by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:32.000000+00:00 app[api]: Build succeeded
+2021-10-18T11:48:39.192067+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=ce6ec14c-4871-48dc-801b-2f1cd928c129 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:48:40.195474+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=806491b4-0984-4c25-b5e2-3766639734b0 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:51:07.902461+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=295fde0b-4519-4d19-ab0b-4c0ab14e4f8f fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:51:08.607641+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=3f34194b-f42f-4940-8921-5815829ef63c fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:53:33.380945+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=c5e5d7bb-d66b-405c-b62a-ed4b0cb59406 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:53:33.873729+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=b12a1f6a-40ad-4c35-8294-0fd7c61d832d fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:54:20.152775+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=a80eaa30-c575-40e2-aa56-90593c94e045 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:54:20.623932+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=3986bbfa-46e5-4b34-8628-ca8e9e7dbdd3 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:12:16.416879+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=53bf81f6-c3ad-479c-8314-06e604d46dc0 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:12:17.064621+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=bf77b74f-ca35-42b4-ae13-a5cc16129963 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:12:24.186772+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=4fd76a9d-6aa5-425c-a64c-25a2b21f8485 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:12:27.816575+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=f3bac364-6b46-4ae8-ba51-22aa4c5bdb94 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:12:34.371855+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=877dea9a-2dc6-49cb-8a7b-7106b5618c0f fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:19:00.215679+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=ec4b2550-0ccd-4251-8d43-f64f0c4b1ad3 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:21:08.598740+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=5b1dc074-102c-4854-acba-2a179d30cda3 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:32:51.284630+00:00 app[api]: Deploy ab1c8284 by user abhijeetdhumal652@gmail.com
+2021-10-18T12:33:03.000000+00:00 app[api]: Build succeeded
+2021-10-18T12:34:26.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T12:34:58.103557+00:00 app[api]: Release v7 created by user abhijeetdhumal652@gmail.com
+2021-10-18T12:35:09.000000+00:00 app[api]: Build succeeded
+rtfolio-abhijeetdhumal.herokuapp.com request_id=25fe2b5b-e7e7-4045-b82b-a9370012cefc fwd="106.220.225.38" dyno= connect= servi^CTerminate batch job (Y/N)? y
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku buildpacks:clear --app portfolio-abhijeetdhumal                
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku buildpacks:set heroku/python --app portfolio-abhijeetdhumal    
+Buildpack set. Next release on portfolio-abhijeetdhumal will use heroku/python.
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku ps:scale web=1 --app portfolio-abhijeetdhumal                  
+Scaling dynos... !
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku buildpacks:clear --app portfolio-abhijeetdhumal                
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku ps:scale web=1 --app portfolio-abhijeetdhumal  
+Scaling dynos... !
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku ps:scale web=1 --app portfolio-abhijeetdhumal
+Scaling dynos... !
+ !    Couldn't find that process type (web).
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku ps:scale web=1 --app portfolio-abhijeetdhumal
+Scaling dynos... !
+(env) PS C:\python_django_projects\portfolio\portfolio> git commit --allow-empty -m "Adjust buildpacks on Heroku"
+[main 2e4ec60] Adjust buildpacks on Heroku
+(env) PS C:\python_django_projects\portfolio\portfolio> git push heroku master
+error: src refspec master does not match any
+error: failed to push some refs to 'heroku'
+(env) PS C:\python_django_projects\portfolio\portfolio> git push heroku main  
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(env) PS C:\python_django_projects\portfolio\portfolio> git push heroku main --app portfolio-abhijeetdhumal
+error: unknown option `app'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --force-if-includes   require remote updates to be integrated locally
+    --recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+(env) PS C:\python_django_projects\portfolio\portfolio> heroku logs --tail --app portfolio-abhijeetdhumal   
+2021-10-18T11:27:39.009725+00:00 app[api]: Release v1 created by user abhijeetdhumal652@gmail.com
+2021-10-18T11:27:39.009725+00:00 app[api]: Initial release by user abhijeetdhumal652@gmail.com
+2021-10-18T11:27:39.166721+00:00 app[api]: Release v2 created by user abhijeetdhumal652@gmail.com
+2021-10-18T11:27:39.166721+00:00 app[api]: Enable Logplex by user abhijeetdhumal652@gmail.com
+2021-10-18T11:28:54.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:29:30.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/aedbf092-272c-4324-94d9-d800dba1cd0f/activity/builds/b873030a-cb4b-403e-beae-dce169b43fb4
+2021-10-18T11:33:38.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:34:14.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/aedbf092-272c-4324-94d9-d800dba1cd0f/activity/builds/8af64015-73f8-4a46-a88c-4369523cb0b4
+2021-10-18T11:37:36.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:38:08.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/aedbf092-272c-4324-94d9-d800dba1cd0f/activity/builds/763b5b66-e635-4e81-a429-c659c9616acd
+2021-10-18T11:41:59.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:42:33.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/aedbf092-272c-4324-94d9-d800dba1cd0f/activity/builds/2d1e2dcf-cc28-46c3-94a7-c51ef63fc31b
+2021-10-18T11:47:31.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.200485+00:00 app[api]: Attach DATABASE (@ref:postgresql-rugged-65998) by user abhijeetdhumal652@gmail.com 
+2021-10-18T11:48:20.200485+00:00 app[api]: Running release v3 commands by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.214125+00:00 app[api]: Release v4 created by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.214125+00:00 app[api]: @ref:postgresql-rugged-65998 completed provisioning, setting DATABASE_URL. by user 
+abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.537786+00:00 app[api]: Release v5 created by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:20.537786+00:00 app[api]: Deploy ab1c8284 by user abhijeetdhumal652@gmail.com
+2021-10-18T11:48:32.000000+00:00 app[api]: Build succeeded
+2021-10-18T11:48:39.192067+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=ce6ec14c-4871-48dc-801b-2f1cd928c129 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:48:40.195474+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=806491b4-0984-4c25-b5e2-3766639734b0 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:51:07.902461+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=295fde0b-4519-4d19-ab0b-4c0ab14e4f8f fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:51:08.607641+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=3f34194b-f42f-4940-8921-5815829ef63c fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:53:33.380945+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=c5e5d7bb-d66b-405c-b62a-ed4b0cb59406 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:53:33.873729+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=b12a1f6a-40ad-4c35-8294-0fd7c61d832d fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:54:20.152775+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=a80eaa30-c575-40e2-aa56-90593c94e045 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T11:54:20.623932+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=3986bbfa-46e5-4b34-8628-ca8e9e7dbdd3 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:12:16.416879+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=53bf81f6-c3ad-479c-8314-06e604d46dc0 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:12:17.064621+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=bf77b74f-ca35-42b4-ae13-a5cc16129963 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:12:24.186772+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=4fd76a9d-6aa5-425c-a64c-25a2b21f8485 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:12:27.816575+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" host=portfolio-abhijeetdhumal.herokuapp.com request_id=f3bac364-6b46-4ae8-ba51-22aa4c5bdb94 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:12:34.371855+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=877dea9a-2dc6-49cb-8a7b-7106b5618c0f fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:19:00.215679+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=ec4b2550-0ccd-4251-8d43-f64f0c4b1ad3 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:21:08.598740+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=5b1dc074-102c-4854-acba-2a179d30cda3 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:32:16.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T12:32:51.284630+00:00 app[api]: Deploy ab1c8284 by user abhijeetdhumal652@gmail.com
+2021-10-18T12:32:51.284630+00:00 app[api]: Release v6 created by user abhijeetdhumal652@gmail.com
+2021-10-18T12:33:03.000000+00:00 app[api]: Build succeeded
+2021-10-18T12:34:26.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T12:34:58.103557+00:00 app[api]: Deploy 430604ac by user abhijeetdhumal652@gmail.com
+2021-10-18T12:34:58.103557+00:00 app[api]: Release v7 created by user abhijeetdhumal652@gmail.com
+2021-10-18T12:35:09.000000+00:00 app[api]: Build succeeded
+2021-10-18T12:35:15.271073+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=25fe2b5b-e7e7-4045-b82b-a9370012cefc fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:44:26.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T12:44:57.363742+00:00 app[api]: Release v8 created by user abhijeetdhumal652@gmail.com
+2021-10-18T12:44:57.363742+00:00 app[api]: Deploy 430604ac by user abhijeetdhumal652@gmail.com
+rtfolio-abhijeetdhumal.herokuapp.com request_id=fb0ffeca-531c-44f3-ba3c-f39a7ac4b79f fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+2021-10-18T12:47:46.000000+00:00 app[api]: Build started by user abhijeetdhumal652@gmail.com
+2021-10-18T12:48:18.448265+00:00 app[api]: Release v9 created by user abhijeetdhumal652@gmail.com
+2021-10-18T12:48:29.000000+00:00 app[api]: Build succeeded
+2021-10-18T12:48:34.827539+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path="/" host=portfolio-abhijeetdhumal.herokuapp.com request_id=b5469c8f-7db2-4db3-86dc-8e9628b14ba2 fwd="106.220.225.38" dyno= connect= service= status=503 bytes= protocol=https
+^CTerminate batch job (Y/N)? y
+(env) PS C:\python_django_projects\portfolio\portfolio> git add .
+(env) PS C:\python_django_projects\portfolio\portfolio> git commit -m "rereupdate"                                            
+[main 291f2af] rereupdate
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename Procfile.txt => Procfile (100%)
+(env) PS C:\python_django_projects\portfolio\portfolio> git push -u origin main                                               
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 424 bytes | 84.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/abhijeet-dhumal/portfolio-abhijeetdhumal.git
+   430604a..291f2af  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(env) PS C:\python_django_projects\portfolio\portfolio> 

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+    {% block covicss %}
+    <!-- css content write here  -->
+    {% endblock %}
+
+    {% block body %}
+
+    {% load static %}
+    
+    <!-- navigation bar part -->
+    <div class="nav-bar">
+        <div class="nav-content">
+            <div class="item item2"><i class="fas fa-bars" id="sidebar_btn" onclick="togglemenu()"></i></div>
+            <div class="item item1"><a href="{% url 'covicare_home' %}" id="link-items">Home</a></div>
+            <div class="item item1"><a href="{% url 'covicare_chat' %}" id="link-items">Chats</a></div>
+            <div class="item item2">About</div>
+            <div class="item item1"><a href="{% url 'covicare_contact' %}" id="link-items">Contacts</div>
+        </div>
+        <div class="search">
+            <div class="searchbox"><input type="text" placeholder="   Search Here.."></div>
+            <div class="sea-rch"><a href="#" class="search-link">
+                    <h3 id="sea-rch" class="font1" style="font-size:18px;padding:1vh 2vh;">Search</h3>
+                </a></div>
+        </div>
+    </div>
+
+    <!-- main content here  -->
+    <div class="contact-content mb-3">
+        <div id="sidebar" onclick="togglemenu()">
+            <div class="profile"></div>
+            <h4 id="username" style="color:white">Username</h4>
+            <a href="#" class="menu-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+            <a href="#" class="menu-link"><i class="fas fa-share-square"></i><span>Share</span></a>
+            <a href="#" class="menu-link"><i class="fas fa-cogs"></i><span>Settings</span></a>
+            <a href="#" class="menu-link"><i class="fas fa-sign-out-alt"></i><span>Log-out</span></a>
+        </div>
+        <div class="contact-content-left">
+            <img src="img/doctor.jpg" alt="" width="385px" style="margin-left: 5vw;margin-top:5vw;">
+        </div>
+        <div class="contact-content-right my-5">
+            <h1>We are here to help !</h1>
+        </div>
+    </div>
+    {% endblock %}

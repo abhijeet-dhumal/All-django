@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+    {% block covicss %}
+    <!-- css content write here  -->
+    {% endblock %}
+
+    {% block body %}
+
+    {% load static %}
+    
+
+    <!-- navigation bar part -->
+    <div class="nav-bar">
+        <div class="nav-content">
+            <div class="item item2"><i class="fas fa-bars" id="sidebar_btn" onclick="togglemenu()"></i></div>
+            <div class="item item1"><a href="{% url 'covicare_home' %}" id="link-items">Home</a></div>
+            <div class="item item2">Chats</div>
+            <div class="item item1"><a href="{% url 'covicare_about' %}" id="link-items">About</a></div>
+            <div class="item item1"><a href="{% url 'covicare_contact' %}" id="link-items">Contacts</a></div>
+        </div>
+        <div class="search">
+            <div class="searchbox"><input type="text" placeholder="   Search Here.."></div>
+            <div class="sea-rch"><a href="#" class="search-link">
+                    <h3 id="sea-rch" class="font1" style="font-size:18px;padding:1vh 2vh;">Search</h3>
+                </a></div>
+        </div>
+    </div>
+
+    <!-- main content here using web socket -->
+    <div id="sidebar" onclick="togglemenu()">
+        <div class="profile"></div>
+        <h4 id="username" style="color:white">Username</h4>
+        <a href="#" class="menu-link"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="#" class="menu-link"><i class="fas fa-share-square"></i><span>Share</span></a>
+        <a href="#" class="menu-link"><i class="fas fa-cogs"></i><span>Settings</span></a>
+        <a href="#" class="menu-link"><i class="fas fa-sign-out-alt"></i><span>Log-out</span></a>
+    </div>
+    <h3 id="chat-head">HeyChat!</h3>
+    <div class="container-chat">
+        <div class="message-right">harry:hey how are you ?</div>
+        <div class="message-left">i am fine bro !!!</div>
+
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="msg-input" id="msg-input" placeholder="Text your message here...">
+            <button class="sub-btn" type="submit"><p id="sub-btn">Send </p></button>
+        </form>
+    </div>
+
+    <!-- main content ends here  -->
+
+    {% endblock %}
